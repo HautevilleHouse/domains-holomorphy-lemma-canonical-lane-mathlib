@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import DomainsHolomorphyLemmaCanonicalLaneLean.AdmissibleClass
+import DomainsHolomorphyLemmaCanonicalLaneLean.BridgeLemmas
+import DomainsHolomorphyLemmaCanonicalLaneLean.GateLemmas
+import DomainsHolomorphyLemmaCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace DomainsHolomorphyLemmaCanonicalLaneLean
+
+theorem closure_proof_for_all : forall A : AdmissibleClass, ConstrainedHolomorphyClosure A := by
+  intro A
+  exact constrained_holomorphy_endgame A
+
+end DomainsHolomorphyLemmaCanonicalLaneLean
+end HautevilleHouse
